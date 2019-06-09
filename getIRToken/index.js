@@ -8,6 +8,7 @@ module.exports = async function(context,req) {
     await axios.post(process.env['ENDPOINT'] + '/issueToken', {}, {headers: headers}).then((res) => {
       context.res = {
         status: 200,
+        headers: {'Access-Control-Allow-Origin' : '*'},
         body: res.data
       }
     }).catch((err) => {

@@ -1,7 +1,7 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
+  "name": "irauthjc",
+  "version": "1.1",
+  "description": "None",
   "scripts": {
     "test": "echo \"No tests yet...\""
   },

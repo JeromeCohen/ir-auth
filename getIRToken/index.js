@@ -16,7 +16,7 @@ module.exports = async function (context, req) {
                 context.res = {
                         status: 200,
                         headers: { 'Access-Control-Allow-Origin': '*' },
-                        body: res.data
+                        body: res.data['access_token']
                 }
         }).catch((err) => {
                 context.res = {

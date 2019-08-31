@@ -12,6 +12,7 @@ module.exports = async function (context, req) {
                 client_secret: process.env['CLIENT_SECRET'],
                 resource: 'https://cognitiveservices.azure.com/'
         }
+        
         await axios.post(`https://login.windows.net/${process.env['TENANT_ID']}/oauth2/token`, querystring.stringify(requestBody), { headers: headers }).then((res) => {
                 context.res = {
                         status: 200,
